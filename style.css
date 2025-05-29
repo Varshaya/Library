@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+body {
+  background: whitesmoke;
+  /*background : #121212;*/
+  color: #eee;
+  min-height: 100vh;
+  padding-top: 100px; 
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 15px 15px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 30px;
+  text-align: center;
+  color: #84cafc;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Gloria Hallelujah', cursive;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1100;
+  transition: top 0.3s ease-in-out;
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #84cafc;
+  font-family: 'Gloria Hallelujah', cursive;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #84cafc;
+}
+
+.book-cover {
+  width: 180px;
+  height: 280px;
+  background: #333;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 15px rgba(0,0,0,0.7);
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+}
+
+button {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #84cafc;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 0 12px #84cafc;
+}
+
+@media (max-width: 700px) {
+  nav {
+    border-radius: 0;
+  }
+  body {
+    padding-top: 80px;
+  }
+}
