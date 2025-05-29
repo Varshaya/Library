@@ -16,7 +16,7 @@ Welcome to the Online **Library**, a simple and elegant web app designed to show
 
 ## Demo
 
-Check out the live demo on [Vercel](https://library-cyan-eight.vercel.app/))  
+Check out the live demo on [Vercel](https://library-cyan-eight.vercel.app/)
 
 
 ---
