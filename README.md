@@ -1,2 +1,9 @@
 # Library
-This is a very small library.
+This is a small library !.
+
+# Tech Stack :
+- HTML
+- CSS
+- JavaScript
+
+
